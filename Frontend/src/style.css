@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #551595;
+    --secondary-color: #c9c5cc;
+    --accent-color: #9b6eaf;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+nav.navbar-light .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-custom {
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.btn-primary-custom {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: #9b6eaf;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-custom {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.features-section {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.modal-header {
+    background: var(--primary-color);
+    color: white;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.user-type-selector {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.user-type-card {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-type-card:hover {
+    border-color: var(--primary-color);
+    background-color: #f0f9ff;
+}
+
+.user-type-card.active {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.conditional-fields {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+}
+
+.conditional-fields.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .user-type-selector {
+        flex-direction: column;
+    }
+}
+
+.dropdown-item {
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+/* botao entrar do menu*/
+.dropdown-item.btn-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.dropdown-item.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* botao cadastrar do menu*/
+.dropdown-item.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dropdown-item.btn-primary:hover {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+}

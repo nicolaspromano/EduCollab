@@ -1,0 +1,76 @@
+/* ======== ESTILO GLOBAL ======== */
+body { 
+  background-color: #F9FAFB; /* Fundo claro */
+  color: #1F2937; /* Texto principal */
+  font-family: Arial, sans-serif;
+}
+
+.navbar { 
+  background-color: #551595; /* Roxo principal */
+}
+
+.navbar-brand { 
+  color: white !important; 
+  font-weight: bold; 
+}
+
+/* ======== CARDS ======== */
+.card { 
+  border: 1px solid #E5E7EB; 
+  border-radius: 10px; 
+  margin-bottom: 1rem; 
+  background-color: #fff;
+}
+
+.card-title {
+  color: #1F2937;
+}
+
+.card-text {
+  color: #6B7280; /* Texto secundário */
+}
+
+/* ======== BOTÕES ======== */
+.btn-prim { 
+  background-color: #152295; /* Roxo principal */
+  border: none; 
+  color: white;
+}
+
+.btn-prim:hover { 
+  background-color: #6e83af; /* Roxo de destaque */
+}
+
+.btn-success { 
+  background-color: #10B981; 
+  border: none; 
+  color: white;
+}
+
+.btn-success:hover { 
+  background-color: #059669;
+}
+
+.btn-danger {
+  background-color: #EF4444; 
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #DC2626;
+}
+
+/* ======== COMENTÁRIOS DO FÓRUM ======== */
+.comment {
+  background-color: #F3F4F6;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ======== EXTRAS ======== */
+.shadow-sm {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
