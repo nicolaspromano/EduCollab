@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #551595;
+  --secondary-color: #c9c5cc;
+}
+
+/* Container principal para centralizar o formulário */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* A caixa branca do formulário */
+.register-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+.register-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Mensagem de erro (Ex: "Email já cadastrado") */
+.register-error-message {
+  color: #D9534F;
+  background-color: #fddede;
+  border: 1px solid #D9534F;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Estilos do Seletor de Tipo de Usuário --- */
+.user-type-selector {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.user-type-card {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #333;
+}
+
+.user-type-card:hover {
+  border-color: var(--primary-color);
+  background-color: #f3e5f5;
+  transform: translateY(-3px);
+}
+
+/* Estilo do card QUANDO ATIVO */
+.user-type-card.active {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 15px rgba(85, 21, 149, 0.3);
+}
+
+.user-type-card h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* --- Campos Condicionais --- */
+.conditional-fields {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+/* Muda a cor do foco para o roxo */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(85, 21, 149, 0.25);
+}
+
+/* Estilo do botão principal */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a1181; 
+  border-color: #4a1181;
+  transform: translateY(-2px);
+}
+
+/* Estilo do botão quando desabilitado */
+.btn-primary:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+

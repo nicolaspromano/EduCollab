@@ -1,0 +1,91 @@
+.login-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #551595 0%, #c9c5cc 100%);
+    padding: 20px;
+}
+
+.selection-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.selection-title {
+    margin-bottom: 30px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.login-button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.professor-btn {
+    background-color: #551595; /* Roxo principal */
+}
+
+.student-btn {
+    background-color: #9b6eaf; /* Tom de roxo mais claro */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
