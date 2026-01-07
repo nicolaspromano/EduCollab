@@ -5,7 +5,7 @@ O EduCollab é uma plataforma educacional colaborativa que conecta alunos e prof
 ## Autores
 Nicolas de Paulo Romano
 
-Maria Eduarda Soares
+Maria Eduarda Romana
 
 Rafael Rodrigues Sanches
 
